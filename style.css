@@ -1,0 +1,104 @@
+body {
+	font-family: 'Nunito', serif;
+}
+
+#contact {
+	text-align: center;
+}
+
+#contact p:nth-child(1) {
+	font-size: 16px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 0;
+	border-bottom: 2px solid #e21212;
+  border-radius: 0;
+}
+
+#topline {
+	letter-spacing: 1px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#company {
+	font-size: 3em;
+	font-weight: 200;
+	text-align: center;
+	letter-spacing: 11px;
+	font-family: Permanent Marker;
+}
+
+#logo {
+	height: 150px;
+}
+
+#tagline {
+	margin-bottom: 30px;
+	letter-spacing: 2px;
+	font-weight: 700;
+}
+
+#theater {
+	display: none;
+	text-align: center;
+ 	margin: 50px 0 200px 0;
+}
+
+#screenshot-container {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.category {
+	margin: 20px 0;
+	padding-top: 40px;
+}
+
+.category span {
+	display: block;
+	font-size: 2em;
+	font-weight: 200;
+	letter-spacing: 11px;
+	padding-bottom: 7px;
+	font-family: Permanent Marker;
+}
+
+.screenshot {
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	margin-bottom: 20px;
+	padding: 2px;
+	-webkit-transition: width 2s, height 2s, color 1s, -webkit-transform 2s;
+	transition: width 2s, height 2s, color 1s, transform 2s;
+}
+
+.screenshot:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	z-index: 10;
+}
+
+.screenshot p {
+	max-width: 300px;
+	text-align: center;
+  text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-top: 5px;
+}
+
+.screenshot img {
+	width: 300px;
+	height: 180px;
+	border: 7px solid black;
+}
+/*
+@media only screen and (max-width: 960px) {
+
+	#toplinks {
+		font-size: 15px;
+	}
+
+}*/

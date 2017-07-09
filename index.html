@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Picture Movers Anonymous</title>
+
+	<meta name="description" content="Picture Movers Anonymous, Los Angeles Production Company">
+	<meta name="Keywords" content="film, hire, video, movie, editing, los angeles, cinema, cinematography, video post-production, color editing, audio adjustment and mixing, production management and planning, music videos, commercials, short films, product video"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" href="favicon.png" type="image/x-icon" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Nunito:400,700|Permanent+Marker' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript" src="videos.js"></script>
+ 	<script type="text/javascript">
+
+		function createScreenShots (category, elementId) {
+			var parent = document.getElementById(elementId);
+			category.forEach(function(item){
+				parent.appendChild(createScreenShot(item));
+			});
+		}
+
+		function createScreenShot (data) {
+			var element = document.createElement('div');
+			var image = document.createElement('img');
+			var description = document.createElement('p');
+
+			element.className = 'screenshot';
+			element.addEventListener('click', function(){
+				showVideo(data.link);
+			});
+
+			image.setAttribute('src', 'images/' + data.image);
+
+			description.appendChild(document.createTextNode(data.title));
+
+			element.appendChild(image);
+			element.appendChild(description);
+
+			return element;
+		}
+
+		function createVimeoFrame (link) {
+			var videoWidth = 600;
+			var videoHeight = 337;
+
+			try {
+				if (document.documentElement.clientWidth < 400) {
+					videoWidth = 340;
+					videoHeight = 192;
+				}
+			} catch (error) {
+				console.log(error);
+			}
+
+			return '<iframe src="https://player.vimeo.com/video/' + link.split('vimeo.com/')[1] + '?autoplay=1" width="' + videoWidth + '" height="' + videoHeight + '" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><div onclick="hideVideo()" style="width: 100%;cursor: pointer;">Close</div>';
+		}
+
+		function createYoutubeFrame (link) {
+			return '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + link.split('watch?v=')[1] + '" frameborder="0" autoplay allowfullscreen></iframe><div onclick="hideVideo()" style="width: 100%;cursor: pointer;">Close</div>';
+		}
+
+		function hideVideo (embedCode) {
+			document.getElementById('theater').innerHTML = '';
+			document.getElementById('theater').style.display = 'none';
+		}
+
+		function setupVideo (embedCode) {
+			document.getElementById('theater').style.display = 'block';
+			document.getElementById('theater').innerHTML = embedCode;
+			document.getElementById('theater').scrollIntoView();
+		}
+
+		function showVideo (link) {
+			if (link.indexOf('vimeo') !== -1)
+				return setupVideo(createVimeoFrame(link));
+			if (link.indexOf('youtube') !== -1)
+				return setupVideo(createYoutubeFrame(link));
+		}
+
+		function start () {
+			createScreenShots(videos, 'screenshot-container');
+		}
+
+		setTimeout(start, 500)
+
+  	</script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div id="contact" class="container-fluid">
+			<div class="col-md-4">
+				<p>Al Engemann - Executive Producer, Founder</p>
+				<p>al.engemann@picmovers.com</p>
+			</div>
+			<div class="col-md-4">
+				<p>Ryan Hawkins - Producer, Founder</p>
+				<p>rj.hawkins@picmovers.com</p>
+			</div>
+			<div class="col-md-4">
+				<p>Lauren Harper - Producer</p>
+				<p>le.harper@picmovers.com</p>
+			</div>
+		</div>
+		<div id="topline">
+			<div id="company">Picture Movers Anonymous</div>
+			<div id="tagline">Video production, at your service.</div>
+			<img src="images/logo.png" id="logo">
+			<br>
+		</div>
+		<div id="theater"></div>
+		<div id="screenshot-container"></div>
+	</div>
+</body>
+</html>
