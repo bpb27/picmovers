@@ -42,6 +42,10 @@
 			return element;
 		}
 
+		function createVevoFrame (link) {
+			return '<iframe width="640" height="360" src="' + link + '&autoplay=true" allowfullscreen=""></iframe><div onclick="hideVideo()" style="width: 100%;cursor: pointer;">Close</div>';
+		}
+
 		function createVimeoFrame (link) {
 			var videoWidth = 600;
 			var videoHeight = 337;
@@ -59,7 +63,7 @@
 		}
 
 		function createYoutubeFrame (link) {
-			return '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + link.split('watch?v=')[1] + '" frameborder="0" autoplay allowfullscreen></iframe><div onclick="hideVideo()" style="width: 100%;cursor: pointer;">Close</div>';
+			return '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + link.split('watch?v=')[1] + '" frameborder="0" autoplay="true" allowfullscreen></iframe><div onclick="hideVideo()" style="width: 100%;cursor: pointer;">Close</div>';
 		}
 
 		function hideVideo (embedCode) {
@@ -78,6 +82,8 @@
 				return setupVideo(createVimeoFrame(link));
 			if (link.indexOf('youtube') !== -1)
 				return setupVideo(createYoutubeFrame(link));
+			if (link.indexOf('vevo.com') !== -1)
+				return setupVideo(createVevoFrame(link));
 		}
 
 		function start () {

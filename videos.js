@@ -6,12 +6,12 @@ var videos = [ //don't touch this line
     "title": "A Scholar's Journey"
 },
 {
-    "link": "https://vimeo.com/134523001",
-    "image": "aging_homelessness.jpeg",
-    "title": "Aging Homeless"
+    "link": "https://embed.vevo.com?isrc=QM3E21706085",
+    "image": "brett_young_like_i_loved_you.jpg",
+    "title": "Like I Loved You - Brett Young"
 },
 {
-    "link": "https://youtu.be/SbGpQ9IM_dU",
+    "link": "https://www.youtube.com/watch?v=-vll1wMqsa4",
     "image": "andrew_watt_and_post_malone_burning_man.jpeg",
     "title": "Andrew Watt and Post Malone - Burning Man"
 },
@@ -136,9 +136,9 @@ var videos = [ //don't touch this line
     "title": "Travis Hayes - Teen Haze"
 },
 {
-    "link": "https://vimeo.com/134135617",
-    "image": "understanding_healthcare.jpeg",
-    "title": "Understanding Healthcare"
-}
+    "link": "https://vimeo.com/134523001",
+    "image": "aging_homelessness.jpeg",
+    "title": "Aging Homeless"
+},
 
 ] // don't touch this line
