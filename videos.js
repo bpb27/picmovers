@@ -1,14 +1,19 @@
 var videos = [ //don't touch this line
 
 {
-    "link": "https://vimeo.com/223193264",
-    "image": "a_scholars_journey.png",
-    "title": "A Scholar's Journey"
+    "link": "https://vimeo.com/235915777",
+    "image": "spartan_recording.png",
+    "title": "Spartan Recording"
 },
 {
     "link": "https://embed.vevo.com?isrc=QM3E21706085",
     "image": "brett_young_like_i_loved_you.jpg",
     "title": "Like I Loved You - Brett Young"
+},
+{
+    "link": "https://vimeo.com/223193264",
+    "image": "a_scholars_journey.png",
+    "title": "A Scholar's Journey"
 },
 {
     "link": "https://www.youtube.com/watch?v=-vll1wMqsa4",
@@ -46,11 +51,6 @@ var videos = [ //don't touch this line
     "title": "Homeless Youth"
 },
 {
-    "link": "https://vimeo.com/132995652",
-    "image": "how_to_pasta.jpeg",
-    "title": "How to Pasta"
-},
-{
     "link": "https://vimeo.com/172182876",
     "image": "jajas_story.jpeg",
     "title": "Ja-Ja's Story"
@@ -64,11 +64,6 @@ var videos = [ //don't touch this line
     "link": "https://vimeo.com/124585060",
     "image": "jonwayne_minerals_and_gems.jpeg",
     "title": "Jonwayne - Minerals and Gems"
-},
-{
-    "link": "https://vimeo.com/105971446",
-    "image": "kiva_zip.jpeg",
-    "title": "Kiva Zip"
 },
 {
     "link": "https://www.youtube.com/watch?v=MKe2AU-7XJQ",
@@ -109,11 +104,6 @@ var videos = [ //don't touch this line
     "link": "https://vimeo.com/181891849",
     "image": "the_great_breakup_contest.jpg",
     "title": "The Great Breakup Contest"
-},
-{
-    "link": "https://vimeo.com/109199029",
-    "image": "the_halloween_costume.jpeg",
-    "title": "The Halloween Costume"
 },
 {
     "link": "https://vimeo.com/75525905",
