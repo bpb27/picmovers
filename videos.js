@@ -1,6 +1,11 @@
 var videos = [ //don't touch this line
 
 {
+    "link": "https://vimeo.com/244888605",
+    "image": "hypland.png",
+    "title": "Hypland"
+},
+{
     "link": "https://vimeo.com/235915777",
     "image": "spartan_recording.png",
     "title": "Spartan Recording"
@@ -9,6 +14,11 @@ var videos = [ //don't touch this line
     "link": "https://embed.vevo.com?isrc=QM3E21706085",
     "image": "brett_young_like_i_loved_you.jpg",
     "title": "Like I Loved You - Brett Young"
+},
+{
+    "link": "https://www.youtube.com/watch?v=nhzVIeuPWl0",
+    "image": "inside_look.png",
+    "title": "Inside Look: Malibu Beach Inn"
 },
 {
     "link": "https://vimeo.com/223193264",
@@ -66,19 +76,9 @@ var videos = [ //don't touch this line
     "title": "Jonwayne - Minerals and Gems"
 },
 {
-    "link": "https://www.youtube.com/watch?v=MKe2AU-7XJQ",
-    "image": "naked_man_locks_himself_out.jpeg",
-    "title": "Naked man locks himself out of hotel room"
-},
-{
     "link": "https://vimeo.com/91400409",
     "image": "norman_silverman.jpeg",
     "title": "Norman Silverman"
-},
-{
-    "link": "https://vimeo.com/100456001",
-    "image": "old_man_saxon_soup.jpeg",
-    "title": "Old Man Saxon - SOUP"
 },
 {
     "link": "https://vimeo.com/76600072",
@@ -102,7 +102,7 @@ var videos = [ //don't touch this line
 },
 {
     "link": "https://vimeo.com/181891849",
-    "image": "the_great_breakup_contest.jpg",
+    "image": "the_great_breakup_contest.png",
     "title": "The Great Breakup Contest"
 },
 {
@@ -124,11 +124,6 @@ var videos = [ //don't touch this line
     "link": "https://vimeo.com/107635172",
     "image": "travis_hayes_teen_haze.jpeg",
     "title": "Travis Hayes - Teen Haze"
-},
-{
-    "link": "https://vimeo.com/134523001",
-    "image": "aging_homelessness.jpeg",
-    "title": "Aging Homeless"
 },
 
 ] // don't touch this line
